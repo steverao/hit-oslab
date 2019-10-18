@@ -20,47 +20,64 @@ github上作者[DeathKing](https://github.com/DeathKing)也提供了一个相关
 
 在本地ubuntu命令行中键入如下命令，下载实验包，其中包括了包括了实验所需的所有工具和文件*（下载前先在本地先安装git工具）*
 
-    git clone https://github.com/steverao/hit-oslab/oslab.git ~/
+- ```
+  git clone https://github.com/steverao/hit-oslab/oslab.git ~/
+  ```
 
 
 
 ## 配置
 
-下载成功以后进入相关目录，并尝试如下命令通过Bochs启动Linux 0.11操作系统。
+- 下载成功以后进入相关目录，并尝试如下命令通过Bochs启动Linux 0.11操作系统。
 
-    cd oslab
-    ./run
+  ```
+  cd oslab
+  ./run
+  ```
 
-如出现如下错误
+- 如出现如下错误
 
-    ./bochs/bochs-gdb: error while loading shared libraries: libSM.so.6: cannot open shared object file: No such file or directory
+  ```
+  ./bochs/bochs-gdb: error while loading shared libraries: libSM.so.6: cannot open shared object file: No such file or directory
+  ```
 
-则显示系统缺少相关的链接库，通过以下命令下载
+- 则显示系统缺少相关的链接库，通过以下命令下载
 
-    sudo apt-get install libsm6:i386
+  ```
+  sudo apt-get install libsm6:i386
+  ```
 
-再次运行如出现如下错误
+- 再次运行如出现如下错误
 
-    ./bochs/bochs-gdb: error while loading shared libraries: libX11.so.6: cannot open shared object file: No such file or directory
+  ```
+  ./bochs/bochs-gdb: error while loading shared libraries: libX11.so.6: cannot open shared object file: No such file or directory
+  ```
 
-则通过如下命令下载对应缺失的库
+- 则通过如下命令下载对应缺失的库
 
-    sudo apt-get install libx11-6:i386
+  ```
+  sudo apt-get install libx11-6:i386
+  ```
 
-再次运行如出现如下错误
+- 再次运行如出现如下错误
 
-    ./bochs/bochs-gdb: error while loading shared libraries: libXpm.so.4: cannot open shared object file: No such file or directory
+  ```
+  ./bochs/bochs-gdb: error while loading shared libraries: libXpm.so.4: cannot open shared object file: No such file or directory
+  ```
 
-则通过如下命令下载对应缺失的库
+- ###### 则通过如下命令下载对应缺失的库
 
-    sudo apt-get install libxpm4:i386
+  ```
+  sudo apt-get install libxpm4:i386
+  ```
 
-经过上述步骤，再次运行，如果出现如下画面则表示成功
+- 经过上述步骤，再次运行，如果出现如下画面则表示成功
+
 
 <div align="center"><img src="illustration/linux-setup.png" width="70%"/></div>
 
 
 
-参考资料
+##参考资料
 
 - [DeathKing的hit-oslab自动配置实验环境](https://github.com/DeathKing/hit-oslab)
