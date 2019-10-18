@@ -78,6 +78,6 @@ github上作者[DeathKing](https://github.com/DeathKing)也提供了一个相关
 
 
 
-##参考资料
+## 参考资料
 
 - [DeathKing的hit-oslab自动配置实验环境](https://github.com/DeathKing/hit-oslab)
