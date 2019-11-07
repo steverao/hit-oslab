@@ -18,9 +18,9 @@ github上作者[DeathKing](https://github.com/DeathKing)也提供了一个相关
 
 ### 实验包下载
 
-在本地ubuntu命令行中键入如下命令，下载实验包，其中包括了包括了实验所需的所有工具和文件*（下载前先在本地先安装git工具）*
+在本地ubuntu命令行中键入如下命令，下载实验包，其中包括了包括了实验所需的所有工具和文件（下载前先在本地安装git工具）
 
-- ```
+  ```
   git clone https://github.com/steverao/hit-oslab/oslab.git ~/
   ```
 
@@ -65,7 +65,7 @@ github上作者[DeathKing](https://github.com/DeathKing)也提供了一个相关
   ./bochs/bochs-gdb: error while loading shared libraries: libXpm.so.4: cannot open shared object file: No such file or directory
   ```
 
-- ###### 则通过如下命令下载对应缺失的库
+- 则通过如下命令下载对应缺失的库
 
   ```
   sudo apt-get install libxpm4:i386
