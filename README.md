@@ -21,7 +21,7 @@ github上作者[DeathKing](https://github.com/DeathKing)也提供了一个相关
 在本地ubuntu命令行中键入如下命令，下载实验包，其中包括了包括了实验所需的所有工具和文件（下载前先在本地安装git工具）
 
   ```
-  git clone https://github.com/steverao/hit-oslab/oslab.git ~/
+  git clone https://github.com/steverao/hit-oslab.git ~/
   ```
 
 
